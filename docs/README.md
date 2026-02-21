@@ -1,4 +1,4 @@
 Add screenshots here:
-- screenshot-home.png
+Home.png
 - screenshot-quiz.png
 - screenshot-results.png
