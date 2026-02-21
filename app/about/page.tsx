@@ -31,16 +31,10 @@ export default function AboutPage() {
             <p className="text-sm text-zinc-300">
               No accounts. No tracking pixels. No analytics by default. The dataset lives in the repo and your answers stay in your browser.
             </p>
-            <p className="mt-3 text-sm text-zinc-400">
-              If you deploy on Vercel, you can still add analytics later—your choice.
-            </p>
           </CardBody>
         </Card>
       </div>
 
-      <div className="mt-10 text-xs text-zinc-500 max-w-3xl">
-        Tip: Add screenshots (quiz + results) to your GitHub README. That’s what makes it look like a real product.
-      </div>
     </Container>
   );
 }
