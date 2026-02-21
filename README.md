@@ -63,15 +63,6 @@ Values are normalized for comparison consistency.
 
 ---
 
-## Screenshots
-<img width="1799" height="928" alt="Home" src="https://github.com/user-attachments/assets/3365a010-c94a-492c-af5e-0f3204947b58" />
-<img width="1744" height="939" alt="Quiz" src="https://github.com/user-attachments/assets/70581361-7877-4e58-bc59-65b98099064a" />
-<img width="1761" height="942" alt="Results" src="https://github.com/user-attachments/assets/5ad3711e-02bf-449c-98fc-35a15e890c05" />
-
-
-
----
-
 ## Technology
 
 - Next.js (App Router)
