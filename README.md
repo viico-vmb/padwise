@@ -1,4 +1,5 @@
 # PadWise
+![Demo](docs/demo.gif)
 
 **PadWise** is a gamer-first mousepad recommender that produces a clear shortlist in ~60 seconds.
 
