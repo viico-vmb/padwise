@@ -1,97 +1,55 @@
-# PadWise — Mousepad Finder (Next.js)
+# PadWise — Mousepad Finder
 
-A **dark, premium** mousepad recommender:
-- 60-second quiz
-- ranked results + reasons
-- starter dataset (30 popular pads)
-- runs fully **client-side** (privacy-first)
+**PadWise** is a **gamer-first mousepad recommender** that gives you a clean shortlist in **~60 seconds**.
 
-> No brand affiliation. This is a neutral helper tool.
+No hype, no “one pad fits all”. Just tradeoffs (control vs speed, humidity, durability) + a ranked result with **human reasons**.
+
+**Live demo:** https://padwise-blush.vercel.app
 
 ---
 
-## Screenshots (add yours)
+## Why this exists
 
-After running locally, add:
+Choosing a pad is annoying:
+- some pads turn **muddy in humidity**
+- “control” vs “speed” is vague without context
+- your **game + sens** changes what “good” means
+
+PadWise solves that with a small quiz + a simple scoring system you can read and modify.
+
+---
+
+## What you get
+
+- ✅ 6-question quiz (local, instant)
+- ✅ ranked recommendations (top picks + **why**)
+- ✅ starter dataset (**30 popular pads**)
+- ✅ privacy-first (client-side, no accounts, no tracking)
+- ✅ dark UI (product-style)
+
+> Neutral tool. No brand affiliation. Always verify exact specs/availability before buying.
+
+---
+
+## Screenshots
+
+Add these files:
 - `docs/screenshot-home.png`
 - `docs/screenshot-quiz.png`
 - `docs/screenshot-results.png`
 
-And paste them here.
+Then embed:
+
+![Home](docs/screenshot-home.png)
+![Quiz](docs/screenshot-quiz.png)
+![Results](docs/screenshot-results.png)
+
+**Optional (recommended):** add a short GIF (`docs/demo.gif`) showing quiz → results.
 
 ---
 
-## Tech stack
-- Next.js (App Router) + TypeScript
-- Tailwind CSS
-- Local dataset (`data/pads.ts`)
-- Simple recommender (`lib/recommend.ts`)
-
----
-
-## Local dev
+## Quickstart
 
 ```bash
 npm install
 npm run dev
-```
-
-Open http://localhost:3000
-
----
-
-## Dataset
-
-File: `data/pads.ts`
-
-Each pad contains heuristic attributes:
-- speed/control (1–10)
-- humidityResistance (1–10)
-- durability (1–10)
-- material/surface/size/priceTier
-
-These values are **approximate** to support ranking.
-Always verify exact specs/availability.
-
----
-
-## Recommender (simple, clean)
-
-File: `lib/recommend.ts`
-
-Scoring considers:
-- feel match (speed/control targets)
-- game bias (tac FPS vs tracking FPS)
-- sens bias (size + glide needs)
-- humidity need
-- budget tier
-- size requirement
-
----
-
-## Deploy on Vercel (recommended)
-
-1) Push this repo to GitHub.
-2) Go to Vercel and click **New Project**.
-3) Import your repository.
-4) Framework preset: **Next.js** (auto-detected).
-5) Click **Deploy**.
-
-No env vars required.
-
-### Custom domain (optional)
-In Vercel → Project → Settings → Domains → add your domain.
-
----
-
-## Make it look “product-level” fast
-
-- Add screenshots + a short GIF
-- Add a favicon + OG image (optional)
-- Add more pads to the dataset (50–100 makes it feel serious)
-- Write a short methodology page (already included: `/about`)
-
----
-
-## License
-MIT
